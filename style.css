@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar .navbar-a {
+  margin-left: 15%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.navbar .cart {
+  margin-right: 15%;
+  position: relative;
+}
+
+.navbar .cart-a {
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.navbar .cartAmount {
+  position: absolute;
+  color: white;
+  font-size: x-small;
+  align-items: center;
+  top: -12px;
+  right: -8px;
+  padding: 0 4px;
+  font-weight: 600;
+  background-color: red;
+  border-radius: 2px;
+}
+
+/* ------------------------------ */
+/* Shopping-Cart */
+
+.shop {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.shop .item {
+  border: 2px solid #212529;
+  border-radius: 4px;
+}
+
+.shop .price {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0 10px 0;
+}
+
+.shop .quentity {
+  font-weight: 500;
+}
+
+.shop .buySec {
+  display: flex;
+  margin-right: 10px;
+}
+
+.shop .price h4 {
+  margin-left: 10px;
+}
+
+.shop .details h3 {
+  text-align: center;
+}
+
+.shop .details p {
+  margin: 2px 10px;
+}
+
+.shop .buySec p {
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .shop {
+    grid-template-columns: repeat(3, 223px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .shop {
+    grid-template-columns: repeat(3, 223px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .shop {
+    grid-template-columns: repeat(4, 223px);
+  }
+}
+
+/* ------------------------------- */
+
+.text-center {
+  margin-top: 90px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.HomeBtn {
+  border: none;
+  background-color: #212529;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.bxs-x-circle{
+    color: red;
+    display: flex;
+    margin-right: 5px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: end;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,250px);
+    justify-content: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.cart-item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+.cart-item img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.title-price-x h4{
+  margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.buttons .bx-plus{
+  margin-right: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.buttons .bx-minus{
+  margin-left: 10px ;
+  font-weight: 600;
+  cursor: pointer;
+}
+.incre-price{
+  text-align: center;
+  border: 1px solid #212529;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.checkout{
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.removeAll{
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+}
