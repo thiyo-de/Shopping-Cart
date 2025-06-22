@@ -6,6 +6,9 @@ A simple, front-end shopping cart built with HTML, CSS, and JavaScript. Allows u
 
 👉 [Live Demo](https://thiyo-de.github.io/Shopping-Cart/) *(If deployed via GitHub Pages — update if needed)*
 
+![Shopping-Cart Screenshot](./assets/screenshot.png)
+![Shopping-Cart Screenshot](./assets/screenshot1.png)
+
 ## ✨ Features
 
 - View a catalog of products.
